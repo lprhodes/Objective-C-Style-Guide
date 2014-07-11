@@ -279,7 +279,8 @@ Block comments should generally be avoided, as code should be as self-documentin
 `init` methods should be structured like this:
 
 ```
-- (instancetype)init {
+- (instancetype)init
+{
     self = [super init]; // or call the designated initalizer
 
     if (self) {
@@ -493,7 +494,8 @@ Singleton objects should use a thread-safe pattern for creating their shared ins
 
 **For example:**
 ```objc
-+ (instancetype)sharedInstance {
++ (instancetype)sharedInstance
+{
    static id sharedInstance = nil;
 
    static dispatch_once_t onceToken;
