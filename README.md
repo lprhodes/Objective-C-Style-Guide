@@ -104,7 +104,7 @@ if(!error){
 }
 ```
 
-**or**
+**or:**
 ```objc
 if (!error){
     return success;
@@ -176,7 +176,21 @@ Some of Apple’s APIs write garbage values to the error parameter (if non-NULL)
 
 Variables should be named as descriptively as possible. Single letter variable names should be avoided. Even in `for()` loops, you can use something like `beanCounter` rather than just `i`.
 
-Asterisks indicating pointers belong with the variable, e.g., `NSString *text` not `NSString* text` or `NSString * text`, except in the case of constants.
+Asterisks indicating pointers belong with the variable.
+
+**For example:**
+```objc
+NSString *text;
+```
+
+**Not:**
+```objc
+NSString* text;
+```
+
+**or:**
+```objc
+NSString * text;
 
 Property definitions should be used in place of naked instance variables whenever possible. Direct instance variable access should be avoided except in initializer methods (`init`, `initWithCoder:`, etc…), `dealloc` methods and within custom setters and getters. For more information on using Accessor Methods in Initializer Methods and dealloc, see [here](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/MemoryMgmt/Articles/mmPractical.html#//apple_ref/doc/uid/TP40004447-SW6).
 
@@ -198,7 +212,12 @@ Property definitions should be used in place of naked instance variables wheneve
 
 #### Variable Qualifiers
 
-When it comes to the variable qualifiers [introduced with ARC](https://developer.apple.com/library/ios/releasenotes/objectivec/rn-transitioningtoarc/Introduction/Introduction.html#//apple_ref/doc/uid/TP40011226-CH1-SW4), the qualifier (`__strong`, `__weak`, `__unsafe_unretained`, `__autoreleasing` `__block`) should be placed on the left of the class name. e.g., `__block NSString *text`. 
+When it comes to the variable qualifiers [introduced with ARC](https://developer.apple.com/library/ios/releasenotes/objectivec/rn-transitioningtoarc/Introduction/Introduction.html#//apple_ref/doc/uid/TP40011226-CH1-SW4), the qualifier (`__strong`, `__weak`, `__unsafe_unretained`, `__autoreleasing` `__block`) should be placed on the left of the class name.
+
+**For example:**
+```objc
+__block NSString *text
+```
 
 ## Naming
 
