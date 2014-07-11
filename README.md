@@ -171,7 +171,7 @@ Some of Apple’s APIs write garbage values to the error parameter (if non-NULL)
 
 **Not:**:
 ```objc
-- (void)setExampleText:(NSString *)text image:(UIImage *)image;
+-(void) setExampleText: (NSString *)text image:(UIImage *) image;
 ```
 
 ## Variables
