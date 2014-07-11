@@ -22,6 +22,7 @@
 * [Arithmetic and Comparison Operators](#arithmetic-and-comparison-operators)
 * [Other Spacing](#other-spacing)
 * [Property Declarations](#property-declarations)
+* [Header Imports](#header-imports)
 * [Image Naming](#image-naming)
 * [Booleans](#booleans)
 * [Singletons](#singletons)
@@ -431,10 +432,22 @@ NSUInteger random = smallest +arc4random() %(largest +1-smallest);
 * There should be no space before the colon in the case declaration of a switch statement.
 * There should always be a space before the asterisk in method signature and variable declarations.
 
-## @property
+## Property Declerations
 * The order should be strong, nonatomic.
 * There should be a space on either side of the brackets.
 * There should be a space after each comma.
+* Properties should be grouped together when they are similar with newline gaps between groups.
+
+## Header Imports
+There should be a grouping order to header imports for clarity:
+* Working file's header
+* Frameworks
+* Categories
+* Singeltons
+* View Controllers
+* Cells
+* Controls
+* Models
 
 ## Image Naming
 
