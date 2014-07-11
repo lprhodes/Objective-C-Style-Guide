@@ -163,12 +163,12 @@ Some of Apple’s APIs write garbage values to the error parameter (if non-NULL)
 *When calling methods there should be no space after semicolons.
 
 **For example:**:
-``
+```objc
 - (void)setExampleText:(NSString *)text image:(UIImage *)image;
 ```
 
 **Not:**:
-```
+```objc
 - (void)setExampleText:(NSString *)text image:(UIImage *)image;
 ```
 
@@ -463,7 +463,7 @@ if (isAwesome == YES) // Never do this.
 If the name of a `BOOL` property is expressed as an adjective, the property can omit the “is” prefix but specifies the conventional name for the get accessor.
 
 **For example:**
-```
+```objc
 @property (assign, getter=isEditable) BOOL editable;
 ```
 Text and example taken from the [Cocoa Naming Guidelines](https://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/CodingGuidelines/Articles/NamingIvarsAndTypes.html#//apple_ref/doc/uid/20001284-BAJGIIJE).
@@ -473,7 +473,7 @@ Text and example taken from the [Cocoa Naming Guidelines](https://developer.appl
 Singleton objects should use a thread-safe pattern for creating their shared instance.
 
 **For example:**
-```
+```objc
 + (instancetype)sharedInstance {
    static id sharedInstance = nil;
 
