@@ -1,4 +1,4 @@
-# Parenthoods Objective-C Style Guide
+# Objective-C Style Guide
 
 ## Table of Contents
 
