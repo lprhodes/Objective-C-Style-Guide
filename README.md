@@ -23,6 +23,7 @@
 * [Other Spacing](#other-spacing)
 * [Property Declarations](#property-declarations)
 * [Header Imports](#header-imports)
+* [Method Ordering and Grouping](#method-ordering-and-grouping)
 * [Image Naming](#image-naming)
 * [Booleans](#booleans)
 * [Singletons](#singletons)
@@ -448,6 +449,9 @@ There should be a grouping order to header imports for clarity:
 * Cells
 * Controls
 * Models
+
+## Method Ordering and Grouping
+Methods should be in the same order in the interface as they are in the implementation. Methods should be groups in there interface in the same way as they are in the implementation (by #pragma mark) though no #pragma mark is needed.
 
 ## Image Naming
 
